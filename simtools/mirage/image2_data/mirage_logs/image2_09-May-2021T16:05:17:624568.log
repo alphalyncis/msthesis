@@ -1,0 +1,236 @@
+2021-05-09 15:42:32,803 - mirage.yaml.yaml_generator - INFO - Running yaml_generator....
+
+2021-05-09 15:42:32,805 - mirage.yaml.yaml_generator - INFO - using APT xml file: ./image2_data/image2.xml
+
+2021-05-09 15:42:32,809 - mirage.yaml.yaml_generator - INFO - Original log file name: ./mirage_latest.log
+2021-05-09 15:42:32,811 - mirage.reference_files.crds_tools.path_check - INFO - CRDS_PATH environment variable not set. Setting to /Users/spacegrey/crds_cache
+2021-05-09 15:42:32,838 - mirage.apt.read_apt_xml - INFO - Running read_apt_xml....
+
+2021-05-09 15:42:32,847 - mirage.apt.read_apt_xml - INFO - target_info:
+2021-05-09 15:42:32,848 - mirage.apt.read_apt_xml - INFO - {'IMAGE-2': ('03:10:4.8000', '-10:05:24.00')}
+2021-05-09 15:42:32,851 - mirage.apt.read_apt_xml - INFO - ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2021-05-09 15:42:32,852 - mirage.apt.read_apt_xml - INFO - Observation `001` labelled `Simple Imaging Example` uses template `NircamImaging`
+2021-05-09 15:42:32,853 - mirage.apt.read_apt_xml - INFO - APTObservationParams Dictionary holds 0 entries before reading template
+2021-05-09 15:42:32,855 - mirage.apt.read_apt_xml - INFO - Primary dither element PrimaryDithers not found, use default primary dithers value (1).
+2021-05-09 15:42:32,856 - mirage.apt.read_apt_xml - INFO - Number of dithers: 1 primary * 1 subpixel = 1
+2021-05-09 15:42:32,857 - mirage.apt.read_apt_xml - INFO - Dictionary read from template has 1 entries.
+2021-05-09 15:42:32,860 - mirage.apt.read_apt_xml - INFO - Found 1 tile(s) for observation 001 Simple Imaging Example
+2021-05-09 15:42:32,863 - mirage.apt.read_apt_xml - INFO - Found 1 visits with numbers: [1]
+2021-05-09 15:42:32,865 - mirage.apt.read_apt_xml - INFO - APTObservationParams Dictionary holds 1 entries after reading template (+1 entries)
+2021-05-09 15:42:32,867 - mirage.apt.read_apt_xml - INFO - Finished reading APT xml file.
+2021-05-09 15:42:32,870 - mirage.apt.read_apt_xml - INFO - ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2021-05-09 15:42:32,887 - mirage.yaml.generate_observationlist.expand_for_dithers - INFO - Number of entries before expanding dithers: 1
+2021-05-09 15:42:32,888 - mirage.yaml.generate_observationlist.expand_for_dithers - INFO - Number of entries after expanding dithers:  1
+2021-05-09 15:42:32,889 - mirage.yaml.generate_observationlist.expand_for_dithers - INFO - Expanded table for Observation 001 has 1 entries
+2021-05-09 15:42:32,892 - mirage.yaml.generate_observationlist.get_observation_dict - INFO - Wrote 1 observations and 1 entries to /Users/spacegrey/polybox/thesis/simtools/mirage/image2_data/observation_list.yaml
+2021-05-09 15:42:36,005 - mirage.apt.apt_inputs - INFO - csv exposure list written to /Users/spacegrey/polybox/thesis/simtools/mirage/image2_data/Observation_table_for_image2.csv
+2021-05-09 15:42:36,428 - mirage.yaml.yaml_generator - INFO - No PSF path provided. Using default path as PSF path for all yamls.
+2021-05-09 15:42:36,467 - mirage.yaml.yaml_generator - INFO - Updated observation table file saved to /Users/spacegrey/polybox/thesis/simtools/mirage/image2_data/Observation_table_for_image2.xml_with_yaml_parameters.csv
+2021-05-09 15:42:36,481 - mirage.yaml.yaml_generator - INFO - 
+
+2021-05-09 15:42:36,482 - mirage.yaml.yaml_generator - INFO - Observation 001:
+2021-05-09 15:42:36,483 - mirage.yaml.yaml_generator - INFO -     Prime: NIRCAM
+2021-05-09 15:42:36,483 - mirage.yaml.yaml_generator - INFO -     1 visit(s)
+2021-05-09 15:42:36,485 - mirage.yaml.yaml_generator - INFO -     1 activity(ies)
+2021-05-09 15:42:36,486 - mirage.yaml.yaml_generator - INFO -     10 NIRCam detector(s) in module A and B
+2021-05-09 15:42:36,487 - mirage.yaml.yaml_generator - INFO -     10 file(s)
+2021-05-09 15:42:36,489 - mirage.yaml.yaml_generator - INFO - 10 output files written to: /Users/spacegrey/polybox/thesis/simtools/mirage/image2_data
+2021-05-09 15:42:36,490 - mirage.yaml.yaml_generator - INFO - Yaml generator complete
+2021-05-09 15:44:01,483 - mirage.imaging_simulator - INFO - 
+
+Running imaging_simulator....
+
+2021-05-09 15:44:01,486 - mirage.imaging_simulator - INFO - using parameter file: image2_data/jw00005001001_01101_00001_nrcb5.yaml
+2021-05-09 15:44:01,522 - mirage.seed_image.catalog_seed_image - INFO - 
+
+Running catalog_seed_image..
+
+2021-05-09 15:44:01,523 - mirage.seed_image.catalog_seed_image - INFO - Reading parameter file: image2_data/jw00005001001_01101_00001_nrcb5.yaml
+
+2021-05-09 15:44:01,524 - mirage.seed_image.catalog_seed_image - INFO - Original log file name: ./mirage_latest.log
+2021-05-09 15:44:01,532 - root - CRITICAL - Traceback (most recent call last):
+  File "/Users/spacegrey/opt/anaconda3/envs/mirage/lib/python3.7/site-packages/mirage/logging/logging_functions.py", line 111, in wrapped
+    func(*args, **kwargs)
+  File "/Users/spacegrey/opt/anaconda3/envs/mirage/lib/python3.7/site-packages/mirage/seed_image/catalog_seed_image.py", line 160, in make_seed
+    overlapping_indexes, self.max_source_index = catalog_index_check(used_cats)
+  File "/Users/spacegrey/opt/anaconda3/envs/mirage/lib/python3.7/site-packages/mirage/catalogs/utils.py", line 67, in catalog_index_check
+    max_index = np.max(indexes)
+  File "<__array_function__ internals>", line 6, in amax
+  File "/Users/spacegrey/opt/anaconda3/envs/mirage/lib/python3.7/site-packages/numpy/core/fromnumeric.py", line 2734, in amax
+    keepdims=keepdims, initial=initial, where=where)
+  File "/Users/spacegrey/opt/anaconda3/envs/mirage/lib/python3.7/site-packages/numpy/core/fromnumeric.py", line 87, in _wrapreduction
+    return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+ValueError: zero-size array to reduction operation maximum which has no identity
+
+2021-05-09 15:44:01,534 - root - CRITICAL - CRASHED
+2021-05-09 15:51:16,463 - mirage.yaml.yaml_generator - INFO - Running yaml_generator....
+
+2021-05-09 15:51:16,465 - mirage.yaml.yaml_generator - INFO - using APT xml file: ./image2_data/image2.xml
+
+2021-05-09 15:51:16,467 - mirage.yaml.yaml_generator - INFO - Original log file name: ./mirage_latest.log
+2021-05-09 15:51:16,488 - mirage.apt.read_apt_xml - INFO - Running read_apt_xml....
+
+2021-05-09 15:51:16,492 - mirage.apt.read_apt_xml - INFO - target_info:
+2021-05-09 15:51:16,493 - mirage.apt.read_apt_xml - INFO - {'IMAGE-2': ('03:10:4.8000', '-10:05:24.00')}
+2021-05-09 15:51:16,494 - mirage.apt.read_apt_xml - INFO - ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2021-05-09 15:51:16,495 - mirage.apt.read_apt_xml - INFO - Observation `001` labelled `Simple Imaging Example` uses template `NircamImaging`
+2021-05-09 15:51:16,498 - mirage.apt.read_apt_xml - INFO - APTObservationParams Dictionary holds 0 entries before reading template
+2021-05-09 15:51:16,501 - mirage.apt.read_apt_xml - INFO - Primary dither element PrimaryDithers not found, use default primary dithers value (1).
+2021-05-09 15:51:16,503 - mirage.apt.read_apt_xml - INFO - Number of dithers: 1 primary * 1 subpixel = 1
+2021-05-09 15:51:16,504 - mirage.apt.read_apt_xml - INFO - Dictionary read from template has 1 entries.
+2021-05-09 15:51:16,507 - mirage.apt.read_apt_xml - INFO - Found 1 tile(s) for observation 001 Simple Imaging Example
+2021-05-09 15:51:16,508 - mirage.apt.read_apt_xml - INFO - Found 1 visits with numbers: [1]
+2021-05-09 15:51:16,509 - mirage.apt.read_apt_xml - INFO - APTObservationParams Dictionary holds 1 entries after reading template (+1 entries)
+2021-05-09 15:51:16,510 - mirage.apt.read_apt_xml - INFO - Finished reading APT xml file.
+2021-05-09 15:51:16,512 - mirage.apt.read_apt_xml - INFO - ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2021-05-09 15:51:16,529 - mirage.yaml.generate_observationlist.expand_for_dithers - INFO - Number of entries before expanding dithers: 1
+2021-05-09 15:51:16,530 - mirage.yaml.generate_observationlist.expand_for_dithers - INFO - Number of entries after expanding dithers:  1
+2021-05-09 15:51:16,531 - mirage.yaml.generate_observationlist.expand_for_dithers - INFO - Expanded table for Observation 001 has 1 entries
+2021-05-09 15:51:16,534 - mirage.yaml.generate_observationlist.get_observation_dict - INFO - Wrote 1 observations and 1 entries to /Users/spacegrey/polybox/thesis/simtools/mirage/image2_data/observation_list.yaml
+2021-05-09 15:51:19,629 - mirage.apt.apt_inputs - INFO - csv exposure list written to /Users/spacegrey/polybox/thesis/simtools/mirage/image2_data/Observation_table_for_image2.csv
+2021-05-09 15:51:20,014 - mirage.yaml.yaml_generator - INFO - No PSF path provided. Using default path as PSF path for all yamls.
+2021-05-09 15:51:20,049 - mirage.yaml.yaml_generator - INFO - Updated observation table file saved to /Users/spacegrey/polybox/thesis/simtools/mirage/image2_data/Observation_table_for_image2.xml_with_yaml_parameters.csv
+2021-05-09 15:51:20,058 - mirage.yaml.yaml_generator - INFO - 
+
+2021-05-09 15:51:20,059 - mirage.yaml.yaml_generator - INFO - Observation 001:
+2021-05-09 15:51:20,059 - mirage.yaml.yaml_generator - INFO -     Prime: NIRCAM
+2021-05-09 15:51:20,061 - mirage.yaml.yaml_generator - INFO -     1 visit(s)
+2021-05-09 15:51:20,063 - mirage.yaml.yaml_generator - INFO -     1 activity(ies)
+2021-05-09 15:51:20,064 - mirage.yaml.yaml_generator - INFO -     10 NIRCam detector(s) in module A and B
+2021-05-09 15:51:20,065 - mirage.yaml.yaml_generator - INFO -     10 file(s)
+2021-05-09 15:51:20,066 - mirage.yaml.yaml_generator - INFO - 10 output files written to: /Users/spacegrey/polybox/thesis/simtools/mirage/image2_data
+2021-05-09 15:51:20,068 - mirage.yaml.yaml_generator - INFO - Yaml generator complete
+2021-05-09 15:52:19,077 - mirage.yaml.yaml_generator - INFO - Running yaml_generator....
+
+2021-05-09 15:52:19,078 - mirage.yaml.yaml_generator - INFO - using APT xml file: ./image2_data/image2.xml
+
+2021-05-09 15:52:19,080 - mirage.yaml.yaml_generator - INFO - Original log file name: ./mirage_latest.log
+2021-05-09 15:52:19,105 - mirage.apt.read_apt_xml - INFO - Running read_apt_xml....
+
+2021-05-09 15:52:19,108 - mirage.apt.read_apt_xml - INFO - target_info:
+2021-05-09 15:52:19,110 - mirage.apt.read_apt_xml - INFO - {'IMAGE-2': ('03:10:4.8000', '-10:05:24.00')}
+2021-05-09 15:52:19,111 - mirage.apt.read_apt_xml - INFO - ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2021-05-09 15:52:19,113 - mirage.apt.read_apt_xml - INFO - Observation `001` labelled `Simple Imaging Example` uses template `NircamImaging`
+2021-05-09 15:52:19,115 - mirage.apt.read_apt_xml - INFO - APTObservationParams Dictionary holds 0 entries before reading template
+2021-05-09 15:52:19,117 - mirage.apt.read_apt_xml - INFO - Primary dither element PrimaryDithers not found, use default primary dithers value (1).
+2021-05-09 15:52:19,119 - mirage.apt.read_apt_xml - INFO - Number of dithers: 1 primary * 1 subpixel = 1
+2021-05-09 15:52:19,121 - mirage.apt.read_apt_xml - INFO - Dictionary read from template has 1 entries.
+2021-05-09 15:52:19,122 - mirage.apt.read_apt_xml - INFO - Found 1 tile(s) for observation 001 Simple Imaging Example
+2021-05-09 15:52:19,124 - mirage.apt.read_apt_xml - INFO - Found 1 visits with numbers: [1]
+2021-05-09 15:52:19,126 - mirage.apt.read_apt_xml - INFO - APTObservationParams Dictionary holds 1 entries after reading template (+1 entries)
+2021-05-09 15:52:19,127 - mirage.apt.read_apt_xml - INFO - Finished reading APT xml file.
+2021-05-09 15:52:19,128 - mirage.apt.read_apt_xml - INFO - ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2021-05-09 15:52:19,143 - mirage.yaml.generate_observationlist.expand_for_dithers - INFO - Number of entries before expanding dithers: 1
+2021-05-09 15:52:19,145 - mirage.yaml.generate_observationlist.expand_for_dithers - INFO - Number of entries after expanding dithers:  1
+2021-05-09 15:52:19,147 - mirage.yaml.generate_observationlist.expand_for_dithers - INFO - Expanded table for Observation 001 has 1 entries
+2021-05-09 16:09:13,862 - mirage.yaml.yaml_generator - INFO - Running yaml_generator....
+
+2021-05-09 16:09:13,865 - mirage.yaml.yaml_generator - INFO - using APT xml file: ./image2_data/image2.xml
+
+2021-05-09 16:09:13,869 - mirage.yaml.yaml_generator - INFO - Original log file name: ./mirage_latest.log
+2021-05-09 16:09:13,892 - mirage.apt.read_apt_xml - INFO - Running read_apt_xml....
+
+2021-05-09 16:09:13,896 - mirage.apt.read_apt_xml - INFO - target_info:
+2021-05-09 16:09:13,898 - mirage.apt.read_apt_xml - INFO - {'IMAGE-2': ('03:10:4.8000', '-10:05:24.00')}
+2021-05-09 16:09:13,899 - mirage.apt.read_apt_xml - INFO - ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2021-05-09 16:09:13,901 - mirage.apt.read_apt_xml - INFO - Observation `001` labelled `Simple Imaging Example` uses template `NircamImaging`
+2021-05-09 16:09:13,902 - mirage.apt.read_apt_xml - INFO - APTObservationParams Dictionary holds 0 entries before reading template
+2021-05-09 16:09:13,904 - mirage.apt.read_apt_xml - INFO - Primary dither element PrimaryDithers not found, use default primary dithers value (1).
+2021-05-09 16:09:13,906 - mirage.apt.read_apt_xml - INFO - Number of dithers: 1 primary * 1 subpixel = 1
+2021-05-09 16:09:13,907 - mirage.apt.read_apt_xml - INFO - Dictionary read from template has 1 entries.
+2021-05-09 16:09:13,908 - mirage.apt.read_apt_xml - INFO - Found 1 tile(s) for observation 001 Simple Imaging Example
+2021-05-09 16:09:13,910 - mirage.apt.read_apt_xml - INFO - Found 1 visits with numbers: [1]
+2021-05-09 16:09:13,911 - mirage.apt.read_apt_xml - INFO - APTObservationParams Dictionary holds 1 entries after reading template (+1 entries)
+2021-05-09 16:09:13,913 - mirage.apt.read_apt_xml - INFO - Finished reading APT xml file.
+2021-05-09 16:09:13,917 - mirage.apt.read_apt_xml - INFO - ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2021-05-09 16:09:13,935 - mirage.yaml.generate_observationlist.expand_for_dithers - INFO - Number of entries before expanding dithers: 1
+2021-05-09 16:09:13,936 - mirage.yaml.generate_observationlist.expand_for_dithers - INFO - Number of entries after expanding dithers:  1
+2021-05-09 16:09:13,936 - mirage.yaml.generate_observationlist.expand_for_dithers - INFO - Expanded table for Observation 001 has 1 entries
+2021-05-09 16:09:13,938 - mirage.yaml.generate_observationlist.get_observation_dict - INFO - Wrote 1 observations and 1 entries to /Users/spacegrey/polybox/thesis/simtools/mirage/image2_data/observation_list.yaml
+2021-05-09 16:09:17,013 - mirage.apt.apt_inputs - INFO - csv exposure list written to /Users/spacegrey/polybox/thesis/simtools/mirage/image2_data/Observation_table_for_image2.csv
+2021-05-09 16:09:17,411 - mirage.yaml.yaml_generator - INFO - No PSF path provided. Using default path as PSF path for all yamls.
+2021-05-09 16:09:17,445 - mirage.yaml.yaml_generator - INFO - Updated observation table file saved to /Users/spacegrey/polybox/thesis/simtools/mirage/image2_data/Observation_table_for_image2.xml_with_yaml_parameters.csv
+2021-05-09 16:09:17,457 - mirage.yaml.yaml_generator - INFO - 
+
+2021-05-09 16:09:17,458 - mirage.yaml.yaml_generator - INFO - Observation 001:
+2021-05-09 16:09:17,458 - mirage.yaml.yaml_generator - INFO -     Prime: NIRCAM
+2021-05-09 16:09:17,459 - mirage.yaml.yaml_generator - INFO -     1 visit(s)
+2021-05-09 16:09:17,460 - mirage.yaml.yaml_generator - INFO -     1 activity(ies)
+2021-05-09 16:09:17,461 - mirage.yaml.yaml_generator - INFO -     10 NIRCam detector(s) in module A and B
+2021-05-09 16:09:17,462 - mirage.yaml.yaml_generator - INFO -     10 file(s)
+2021-05-09 16:09:17,464 - mirage.yaml.yaml_generator - INFO - 10 output files written to: /Users/spacegrey/polybox/thesis/simtools/mirage/image2_data
+2021-05-09 16:09:17,465 - mirage.yaml.yaml_generator - INFO - Yaml generator complete
+2021-05-09 16:10:24,854 - mirage.yaml.yaml_generator - INFO - Running yaml_generator....
+
+2021-05-09 16:10:24,855 - mirage.yaml.yaml_generator - INFO - using APT xml file: ./image2_data/image2.xml
+
+2021-05-09 16:10:24,857 - mirage.yaml.yaml_generator - INFO - Original log file name: ./mirage_latest.log
+2021-05-09 16:10:24,879 - mirage.apt.read_apt_xml - INFO - Running read_apt_xml....
+
+2021-05-09 16:10:24,881 - mirage.apt.read_apt_xml - INFO - target_info:
+2021-05-09 16:10:24,882 - mirage.apt.read_apt_xml - INFO - {'IMAGE-2': ('03:10:4.8000', '-10:05:24.00')}
+2021-05-09 16:10:24,884 - mirage.apt.read_apt_xml - INFO - ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2021-05-09 16:10:24,886 - mirage.apt.read_apt_xml - INFO - Observation `001` labelled `Simple Imaging Example` uses template `NircamImaging`
+2021-05-09 16:10:24,888 - mirage.apt.read_apt_xml - INFO - APTObservationParams Dictionary holds 0 entries before reading template
+2021-05-09 16:10:24,890 - mirage.apt.read_apt_xml - INFO - Primary dither element PrimaryDithers not found, use default primary dithers value (1).
+2021-05-09 16:10:24,890 - mirage.apt.read_apt_xml - INFO - Number of dithers: 1 primary * 1 subpixel = 1
+2021-05-09 16:10:24,892 - mirage.apt.read_apt_xml - INFO - Dictionary read from template has 1 entries.
+2021-05-09 16:10:24,895 - mirage.apt.read_apt_xml - INFO - Found 1 tile(s) for observation 001 Simple Imaging Example
+2021-05-09 16:10:24,898 - mirage.apt.read_apt_xml - INFO - Found 1 visits with numbers: [1]
+2021-05-09 16:10:24,900 - mirage.apt.read_apt_xml - INFO - APTObservationParams Dictionary holds 1 entries after reading template (+1 entries)
+2021-05-09 16:10:24,902 - mirage.apt.read_apt_xml - INFO - Finished reading APT xml file.
+2021-05-09 16:10:24,903 - mirage.apt.read_apt_xml - INFO - ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2021-05-09 16:10:24,923 - mirage.yaml.generate_observationlist.expand_for_dithers - INFO - Number of entries before expanding dithers: 1
+2021-05-09 16:10:24,923 - mirage.yaml.generate_observationlist.expand_for_dithers - INFO - Number of entries after expanding dithers:  1
+2021-05-09 16:10:24,925 - mirage.yaml.generate_observationlist.expand_for_dithers - INFO - Expanded table for Observation 001 has 1 entries
+2021-05-09 16:10:24,928 - mirage.yaml.generate_observationlist.get_observation_dict - INFO - Wrote 1 observations and 1 entries to /Users/spacegrey/polybox/thesis/simtools/mirage/image2_data/observation_list.yaml
+2021-05-09 16:10:28,024 - mirage.apt.apt_inputs - INFO - csv exposure list written to /Users/spacegrey/polybox/thesis/simtools/mirage/image2_data/Observation_table_for_image2.csv
+2021-05-09 16:10:28,398 - mirage.yaml.yaml_generator - INFO - No PSF path provided. Using default path as PSF path for all yamls.
+2021-05-09 16:10:28,697 - mirage.yaml.yaml_generator - INFO - Updated observation table file saved to /Users/spacegrey/polybox/thesis/simtools/mirage/image2_data/Observation_table_for_image2.xml_with_yaml_parameters.csv
+2021-05-09 16:10:28,705 - mirage.yaml.yaml_generator - INFO - 
+
+2021-05-09 16:10:28,706 - mirage.yaml.yaml_generator - INFO - Observation 001:
+2021-05-09 16:10:28,707 - mirage.yaml.yaml_generator - INFO -     Prime: NIRCAM
+2021-05-09 16:10:28,708 - mirage.yaml.yaml_generator - INFO -     1 visit(s)
+2021-05-09 16:10:28,709 - mirage.yaml.yaml_generator - INFO -     1 activity(ies)
+2021-05-09 16:10:28,710 - mirage.yaml.yaml_generator - INFO -     10 NIRCam detector(s) in module A and B
+2021-05-09 16:10:28,712 - mirage.yaml.yaml_generator - INFO -     10 file(s)
+2021-05-09 16:10:28,715 - mirage.yaml.yaml_generator - INFO - 10 output files written to: /Users/spacegrey/polybox/thesis/simtools/mirage/image2_data
+2021-05-09 16:10:28,718 - mirage.yaml.yaml_generator - INFO - Yaml generator complete
+2021-05-09 16:11:13,943 - mirage.yaml.yaml_generator - INFO - Running yaml_generator....
+
+2021-05-09 16:11:13,945 - mirage.yaml.yaml_generator - INFO - using APT xml file: ./image2_data/image2.xml
+
+2021-05-09 16:11:13,946 - mirage.yaml.yaml_generator - INFO - Original log file name: ./mirage_latest.log
+2021-05-09 16:11:13,971 - mirage.apt.read_apt_xml - INFO - Running read_apt_xml....
+
+2021-05-09 16:11:13,973 - mirage.apt.read_apt_xml - INFO - target_info:
+2021-05-09 16:11:13,974 - mirage.apt.read_apt_xml - INFO - {'IMAGE-2': ('03:10:4.8000', '-10:05:24.00')}
+2021-05-09 16:11:13,975 - mirage.apt.read_apt_xml - INFO - ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2021-05-09 16:11:13,976 - mirage.apt.read_apt_xml - INFO - Observation `001` labelled `Simple Imaging Example` uses template `NircamImaging`
+2021-05-09 16:11:13,977 - mirage.apt.read_apt_xml - INFO - APTObservationParams Dictionary holds 0 entries before reading template
+2021-05-09 16:11:13,979 - mirage.apt.read_apt_xml - INFO - Primary dither element PrimaryDithers not found, use default primary dithers value (1).
+2021-05-09 16:11:13,980 - mirage.apt.read_apt_xml - INFO - Number of dithers: 1 primary * 1 subpixel = 1
+2021-05-09 16:11:13,983 - mirage.apt.read_apt_xml - INFO - Dictionary read from template has 1 entries.
+2021-05-09 16:11:13,985 - mirage.apt.read_apt_xml - INFO - Found 1 tile(s) for observation 001 Simple Imaging Example
+2021-05-09 16:11:13,986 - mirage.apt.read_apt_xml - INFO - Found 1 visits with numbers: [1]
+2021-05-09 16:11:13,988 - mirage.apt.read_apt_xml - INFO - APTObservationParams Dictionary holds 1 entries after reading template (+1 entries)
+2021-05-09 16:11:13,990 - mirage.apt.read_apt_xml - INFO - Finished reading APT xml file.
+2021-05-09 16:11:13,991 - mirage.apt.read_apt_xml - INFO - ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2021-05-09 16:11:14,009 - mirage.yaml.generate_observationlist.expand_for_dithers - INFO - Number of entries before expanding dithers: 1
+2021-05-09 16:11:14,010 - mirage.yaml.generate_observationlist.expand_for_dithers - INFO - Number of entries after expanding dithers:  1
+2021-05-09 16:11:14,011 - mirage.yaml.generate_observationlist.expand_for_dithers - INFO - Expanded table for Observation 001 has 1 entries
+2021-05-09 16:11:14,014 - mirage.yaml.generate_observationlist.get_observation_dict - INFO - Wrote 1 observations and 1 entries to /Users/spacegrey/polybox/thesis/simtools/mirage/image2_data/observation_list.yaml
+2021-05-09 16:11:17,154 - mirage.apt.apt_inputs - INFO - csv exposure list written to /Users/spacegrey/polybox/thesis/simtools/mirage/image2_data/Observation_table_for_image2.csv
+2021-05-09 16:11:17,559 - mirage.yaml.yaml_generator - INFO - No PSF path provided. Using default path as PSF path for all yamls.
+2021-05-09 16:11:17,598 - mirage.yaml.yaml_generator - INFO - Updated observation table file saved to /Users/spacegrey/polybox/thesis/simtools/mirage/image2_data/Observation_table_for_image2.xml_with_yaml_parameters.csv
+2021-05-09 16:11:17,611 - mirage.yaml.yaml_generator - INFO - 
+
+2021-05-09 16:11:17,612 - mirage.yaml.yaml_generator - INFO - Observation 001:
+2021-05-09 16:11:17,612 - mirage.yaml.yaml_generator - INFO -     Prime: NIRCAM
+2021-05-09 16:11:17,613 - mirage.yaml.yaml_generator - INFO -     1 visit(s)
+2021-05-09 16:11:17,615 - mirage.yaml.yaml_generator - INFO -     1 activity(ies)
+2021-05-09 16:11:17,617 - mirage.yaml.yaml_generator - INFO -     10 NIRCam detector(s) in module A and B
+2021-05-09 16:11:17,619 - mirage.yaml.yaml_generator - INFO -     10 file(s)
+2021-05-09 16:11:17,621 - mirage.yaml.yaml_generator - INFO - 10 output files written to: /Users/spacegrey/polybox/thesis/simtools/mirage/image2_data
+2021-05-09 16:11:17,623 - mirage.yaml.yaml_generator - INFO - Yaml generator complete

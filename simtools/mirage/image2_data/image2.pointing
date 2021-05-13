@@ -1,0 +1,14 @@
+# APT Output Product
+# 
+# APT Version: Version 2020.5  
+# Date: Sat May 01 13:23:23 GMT 2021
+
+JWST Pointing Report for JWST Approved Proposal 5 (Unsaved)
+
+========================================
+* Simple Imaging Example (Obs 1)
+** Visit 1:1
+Tar Tile Exp Dith Aperture Name             Target       RA         Dec        BaseX    BaseY    DithX    DithY    V2       V3       IdlX     IdlY   Level      Type      ExPar  DkPar   dDist          
+  1    1   1    1 NRCALL_FULL               1 IMAGE-2   +47.52000  -10.09000   +0.000   +0.000   +0.000   +0.000   -0.328 -492.966   +0.000   +0.000 TARGET     SCIENCE     4235   4235  0.000 (base)
+
+

@@ -1,0 +1,38 @@
+2021-05-09 15:42:32,803 - mirage.yaml.yaml_generator - INFO - Running yaml_generator....
+
+2021-05-09 15:42:32,805 - mirage.yaml.yaml_generator - INFO - using APT xml file: ./image2_data/image2.xml
+
+2021-05-09 15:42:32,809 - mirage.yaml.yaml_generator - INFO - Original log file name: ./mirage_latest.log
+2021-05-09 15:42:32,811 - mirage.reference_files.crds_tools.path_check - INFO - CRDS_PATH environment variable not set. Setting to /Users/spacegrey/crds_cache
+2021-05-09 15:42:32,838 - mirage.apt.read_apt_xml - INFO - Running read_apt_xml....
+
+2021-05-09 15:42:32,847 - mirage.apt.read_apt_xml - INFO - target_info:
+2021-05-09 15:42:32,848 - mirage.apt.read_apt_xml - INFO - {'IMAGE-2': ('03:10:4.8000', '-10:05:24.00')}
+2021-05-09 15:42:32,851 - mirage.apt.read_apt_xml - INFO - ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2021-05-09 15:42:32,852 - mirage.apt.read_apt_xml - INFO - Observation `001` labelled `Simple Imaging Example` uses template `NircamImaging`
+2021-05-09 15:42:32,853 - mirage.apt.read_apt_xml - INFO - APTObservationParams Dictionary holds 0 entries before reading template
+2021-05-09 15:42:32,855 - mirage.apt.read_apt_xml - INFO - Primary dither element PrimaryDithers not found, use default primary dithers value (1).
+2021-05-09 15:42:32,856 - mirage.apt.read_apt_xml - INFO - Number of dithers: 1 primary * 1 subpixel = 1
+2021-05-09 15:42:32,857 - mirage.apt.read_apt_xml - INFO - Dictionary read from template has 1 entries.
+2021-05-09 15:42:32,860 - mirage.apt.read_apt_xml - INFO - Found 1 tile(s) for observation 001 Simple Imaging Example
+2021-05-09 15:42:32,863 - mirage.apt.read_apt_xml - INFO - Found 1 visits with numbers: [1]
+2021-05-09 15:42:32,865 - mirage.apt.read_apt_xml - INFO - APTObservationParams Dictionary holds 1 entries after reading template (+1 entries)
+2021-05-09 15:42:32,867 - mirage.apt.read_apt_xml - INFO - Finished reading APT xml file.
+2021-05-09 15:42:32,870 - mirage.apt.read_apt_xml - INFO - ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2021-05-09 15:42:32,887 - mirage.yaml.generate_observationlist.expand_for_dithers - INFO - Number of entries before expanding dithers: 1
+2021-05-09 15:42:32,888 - mirage.yaml.generate_observationlist.expand_for_dithers - INFO - Number of entries after expanding dithers:  1
+2021-05-09 15:42:32,889 - mirage.yaml.generate_observationlist.expand_for_dithers - INFO - Expanded table for Observation 001 has 1 entries
+2021-05-09 15:42:32,892 - mirage.yaml.generate_observationlist.get_observation_dict - INFO - Wrote 1 observations and 1 entries to /Users/spacegrey/polybox/thesis/simtools/mirage/image2_data/observation_list.yaml
+2021-05-09 15:42:36,005 - mirage.apt.apt_inputs - INFO - csv exposure list written to /Users/spacegrey/polybox/thesis/simtools/mirage/image2_data/Observation_table_for_image2.csv
+2021-05-09 15:42:36,428 - mirage.yaml.yaml_generator - INFO - No PSF path provided. Using default path as PSF path for all yamls.
+2021-05-09 15:42:36,467 - mirage.yaml.yaml_generator - INFO - Updated observation table file saved to /Users/spacegrey/polybox/thesis/simtools/mirage/image2_data/Observation_table_for_image2.xml_with_yaml_parameters.csv
+2021-05-09 15:42:36,481 - mirage.yaml.yaml_generator - INFO - 
+
+2021-05-09 15:42:36,482 - mirage.yaml.yaml_generator - INFO - Observation 001:
+2021-05-09 15:42:36,483 - mirage.yaml.yaml_generator - INFO -     Prime: NIRCAM
+2021-05-09 15:42:36,483 - mirage.yaml.yaml_generator - INFO -     1 visit(s)
+2021-05-09 15:42:36,485 - mirage.yaml.yaml_generator - INFO -     1 activity(ies)
+2021-05-09 15:42:36,486 - mirage.yaml.yaml_generator - INFO -     10 NIRCam detector(s) in module A and B
+2021-05-09 15:42:36,487 - mirage.yaml.yaml_generator - INFO -     10 file(s)
+2021-05-09 15:42:36,489 - mirage.yaml.yaml_generator - INFO - 10 output files written to: /Users/spacegrey/polybox/thesis/simtools/mirage/image2_data
+2021-05-09 15:42:36,490 - mirage.yaml.yaml_generator - INFO - Yaml generator complete
