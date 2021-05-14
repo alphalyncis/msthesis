@@ -5,7 +5,7 @@ from scipy.optimize import curve_fit
 import matplotlib.pyplot as plt
 from matplotlib.colors import LogNorm
 
-
+suffix = 'test'
 
 # ------- Read grids ---------
 
@@ -40,21 +40,21 @@ ix, iy, iz = grid[12:13+nx[0]], grid[13+nx[0]: 14+nx[0]+ny[0]], grid[14+nx[0]+ny
 ystep = iy[1] - iy[0]
 ystart = iy[0] - 30 * ystep
 iynew = np.linspace(ystart, ystart+100*ystep, 101)
-nynew = 100
+nynew = np.concatenate((np.array([100]), ny[1:]))
 amrinfo[0][2] += 30
 
-with open('amr_grid_ext.inp','w') as wfile:
+with open('amr_grid_'+suffix+'.inp','w') as wfile:
     wfile.write('%d\n' % grid[0])  # iformat
     wfile.write('%d\n' % grid[1])  # grid style
     wfile.write('%d\n' % grid[2])  # coordsystem
     wfile.write('%d\n' % grid[3])  # grid info
     wfile.write('%d %d %d \n' % (grid[4], grid[5], grid[6]))
-    wfile.write('%d %d %d \n' % (nx[0], nynew, nz[0]))
+    wfile.write('%d %d %d \n' % (nx[0], nynew[0], nz[0]))
     wfile.write('%d %d \n' % (grid[10], grid[11]))
     for i in range(nx[0]+1):
         wfile.write('%.5e  ' % ix[i])
     wfile.write('\n')
-    for i in range(ny[0]+1):
+    for i in range(nynew[0]+1):
         if i == 50:
             wfile.write('1.57079632679489661923132169164  ')
         else:
@@ -136,15 +136,14 @@ plt.colorbar(orientation="horizontal")
 dens0new1d = dens0new.flatten("F")
 datanew = np.concatenate((dens0new1d, data[nx[0]*ny[0]*nz[0]:]))
 
-nynew = 100
 nrcellsnew = 0
 for n in range(nrlayers):
     if n == 0:
-        nrcellsnew += nx[n] * nynew * nz[n]
+        nrcellsnew += nx[n] * nynew[n] * nz[n]
     else:
         nrcellsnew += nx[n] * ny[n] * nz[n]
 
-with open('gas_density_ext.binp','w') as wfile:
+with open('gas_density_'+suffix+'.binp','w') as wfile:
     hdrnew = np.array([hdr[0], hdr[1], nrcellsnew, hdr[3]], dtype=np.int64)
     hdrnew.tofile(wfile)
     datanew.tofile(wfile)
@@ -183,11 +182,11 @@ gas_temp_new = np.concatenate((tempnew1d, gas_temp[nx[0]*ny[0]*nz[0]:]))
 nrcellsnew = 0
 for n in range(nrlayers):
     if n == 0:
-        nrcellsnew += nx[n] * nynew * nz[n]
+        nrcellsnew += nx[n] * nynew[n] * nz[n]
     else:
         nrcellsnew += nx[n] * ny[n] * nz[n]
 
-with open('gas_temperature_ext.binp','w') as wfile:
+with open('gas_temperature_'+suffix+'.binp','w') as wfile:
     hdr = np.array([hdr[0], hdr[1], nrcellsnew, hdr[3]], dtype=np.int64)
     hdr.tofile(wfile)
     gas_temp_new.tofile(wfile)
@@ -197,7 +196,7 @@ wfile.close()
 
 # ------- Change dust_temperature.bdat -------
 
-with open('dust_temperature_ext.bdat','w') as wfile:
+with open('dust_temperature_'+suffix+'.bdat','w') as wfile:
     hdr = np.array([hdr[0], hdr[1], nrcellsnew, hdr[3]], dtype=np.int64)
     hdr.tofile(wfile)
     gas_temp_new.tofile(wfile)
@@ -207,7 +206,7 @@ wfile.close()
 
 # -------- Change dust_density.binp -------
 
-with open('gas_density_ext.binp','r') as rfile:
+with open('gas_density_'+suffix+'.binp','r') as rfile:
     hdr = np.fromfile(rfile, count=4, dtype=np.int64)
     # hdr[0] = iformat
     # hdr[1] = precision
@@ -217,7 +216,7 @@ with open('gas_density_ext.binp','r') as rfile:
 
 dust_dens = 0.01 * gas_dens
 
-with open('dust_density_ext.binp','w') as wfile:
+with open('dust_density_'+suffix+'.binp','w') as wfile:
     hdr.tofile(wfile)
     dust_dens.tofile(wfile)
 wfile.close()
