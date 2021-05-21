@@ -244,7 +244,7 @@ class Radmc3dModel():
         wfile.close()
 
     def include_evap(self):
-        '''Write new extended 'gas_temperature_suffix.binp' file with suffix'''
+        '''Write new extended 'dust_density_suffix.binp' file with suffix'''
         print('Including dust evaporation...')
 
         with open('dust_density_'+suffix+'.binp','r') as rfile:
