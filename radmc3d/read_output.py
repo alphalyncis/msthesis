@@ -1,7 +1,5 @@
-import copy
 import os
 import numpy as np
-import scipy.special as spc
 
 from astropy.io import fits
 import matplotlib.pylab as plt
