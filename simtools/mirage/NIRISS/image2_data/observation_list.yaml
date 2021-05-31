@@ -1,0 +1,25 @@
+# Observation list created by generate_observationlist.py
+
+Observation001:
+  Name: 'Simple Imaging Example'
+  EntryNumber0:
+    Instrument: NIRISS
+    Date: 2022-10-31T00:00:00
+    PAV3: 0
+    DitherIndex: 0
+    CosmicRayLibrary: SUNMAX
+    CosmicRayScale: 1.0
+    Filter: F200W
+    PointSourceCatalog: None
+    GalaxyCatalog: None
+    ExtendedCatalog: image2_data/source_catalog_file.cat
+    MovingTargetList: None
+    MovingTargetSersic: None
+    MovingTargetExtended: None
+    MovingTargetToTrack: None
+    ImagingTSOCatalog: None
+    GrismTSOCatalog: None
+    BackgroundRate: medium
+    MovingTargetConvolveExtended: True
+    ExtendedScale: 1.0
+    ExtendedCenter: 1024,1024
