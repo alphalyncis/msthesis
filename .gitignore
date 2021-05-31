@@ -9,7 +9,7 @@ simtools/mirage/image2_data/mirage_logs/image2_01-May-2021T15:05:24:689314.log
 simtools/mirage/image2_data/.DS_Store
 simtools/mirage/image2_data/.DS_Store
 simtools/.DS_Store
-.DS_Store
+*.DS_Store
 simtools/mirisim/.DS_Store
 simtools/mirage/image2_data/.DS_Store
 simtools/mirisim/.DS_Store
