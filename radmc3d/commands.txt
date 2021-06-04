@@ -1,0 +1,21 @@
+commands
+
+source ~/.bashrc rehash
+cd ../ipa/user/xuechen/thesis/RADMC3D/model_
+
+export PATH=/home/xuechen/bin:$PATH
+export PATH=/home/xuechen/bin/python:$PATH
+export PYTHONPATH=/home/xuechen/bin/python:$PYTHONPATH
+export PYTHONPATH=${PYTHONPATH}:/home/xuechen/bin/lib/python3.X/site-packages
+
+
+radmc3d image npix 1000 sizeau 26 incl 0.  lambda 200 fluxcons
+cp image.out image_200.out
+
+create SimCADO spectrum:
+radmc3d spectrum incl 0 fluxcons lambdarange 1.0 3.0 nlam 21 (nostar)
+
+create MIRISim image cube:
+radmc3d image npix 24 sizeau 260 incl 0 fluxcons lambdarange 8. 11. nlam 25 (100 pc)
+
+python -c 'from tofits import *; radmcimage_to_fits("image200.out")'
