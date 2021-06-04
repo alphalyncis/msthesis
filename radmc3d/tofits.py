@@ -383,31 +383,7 @@ def radmcimage_to_fits(filename):
     im.writeFits(cwd+'/'+filename[:-4]+".fits", dpc = 100)
 
 
-filename = 'image10.out'
-
-# ------- Convert image.out to image.fits -------
-
-radmcimage_to_fits(filename)
-
-''' or in command line run:
+'''
+in command line run:
 python -c 'from read_output import *; radmcimage_to_fits("image_200.out")'
 '''
-
-# ------- Plot image.out with matplolib -------
-
-im = readImage(filename)
-cmap = plt.cm.viridis
-cmap.set_bad(color=cmap(0))
-img = im.imageJyppix.reshape((im.nx, im.ny)).swapaxes(1, 0)
-plt.imshow(img, cmap=cmap, norm=LogNorm(vmin=1e-10, vmax=1e2), origin='lower')  
-cbar = plt.colorbar()
-cbar.set_label('Jy/pixel')
-
-
-# ------- Plot fits image with matplolib -------
-
-with fits.open('image10.fits') as inhdul:
-    sourceimg = inhdul[0].data[0]
-plt.imshow(sourceimg, cmap=cmap, norm=LogNorm(vmin=1e-10, vmax=1e2), origin='lower')
-cbar = plt.colorbar()
-cbar.set_label('Jy/pixel')
