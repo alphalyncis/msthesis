@@ -1,5 +1,6 @@
 import os
 import numpy as np
+import sys
 
 from astropy.io import fits
 import matplotlib.pylab as plt
@@ -382,8 +383,8 @@ def radmcimage_to_fits(filename):
     im = readImage(filename)
     im.writeFits(cwd+'/'+filename[:-4]+".fits", dpc = 100)
 
+if __name__ == "__main__":
+    fname = sys.argv[1]
+    radmcimage_to_fits(fname)
 
-'''
-in command line run:
-python -c 'from read_output import *; radmcimage_to_fits("image_200.out")'
-'''
+

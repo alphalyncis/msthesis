@@ -1,0 +1,11 @@
+step for each new lam:
+1. make a folder image{}_data and image{}_sim with subdirectories
+2. copy .cat, .pointing and .xml file to image{}_data, change the filter name in .xml
+3. run nrcsim_all.sh file
+
+current xml file name:
+shallow4_grp10int10.xml
+
+current xml file setting:
+F210M/F360M/F480M_shallow4_grp10int10_Bsub160
+

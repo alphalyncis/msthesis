@@ -58,7 +58,7 @@ class Radmc3dModel():
             # grid[11] = nrlayers
             # grid[-7*nrlayers:] = amr layers info
 
-        self.nrlayers = int(self.grid[11]) + 1 # including 0th layer
+        self.nrlayers = int(self.grid[11]) + 1  # including 0th layer
 
         self.nx = np.zeros(self.nrlayers, dtype=int)
         self.ny = np.zeros(self.nrlayers, dtype=int)

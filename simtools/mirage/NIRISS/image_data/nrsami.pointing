@@ -1,0 +1,18 @@
+# APT Output Product
+# 
+# APT Version: Version 2020.5  
+# Date: Mon Nov 01 18:19:24 GMT 2021
+
+JWST Pointing Report for JWST Approved Proposal 5 (CPD_imaging_nircam.aptx.2021_10_18_22_55.aptbackup.2021_11_01_15_31.aptbackup)
+
+========================================
+* CPD imaging (Obs 1)
+** Visit 1:1
+Tar Tile Exp Dith Aperture Name             Target       RA         Dec        BaseX    BaseY    DithX    DithY    V2       V3       IdlX     IdlY   Level      Type      ExPar  DkPar   dDist          
+  0    0   0    0 NIS_AMITA                 1 CPD       +47.52000  -10.09000   +0.000   +0.000   +0.000   +0.000 -295.840 -758.186   +0.000   +0.000 TARGET     T_ACQ          0      0  0.000 (base)
+  0    0   0    0 NIS_AMITA                 1 CPD       +47.52000  -10.09000   +0.000   +0.000   -0.131   -0.262 -295.712 -758.449   -0.131   -0.262 TARGET     T_ACQ          0      0  0.292          
+  0    0   0    0 NIS_AMITA                 1 CPD       +47.52000  -10.09000   +0.000   +0.000   -0.196   +0.329 -295.641 -757.859   -0.196   +0.329 TARGET     T_ACQ          0      0  0.594          
+  0    0   0    0 NIS_AMITA                 1 CPD       +47.52000  -10.09000   +0.000   +0.000   +0.000   +0.000 -295.840 -758.186   +0.000   +0.000 TARGET     T_ACQ          0      0  0.383          
+  1    1   1    1 NIS_AMI1                  1 CPD       +47.52000  -10.09000   +0.000   +0.000   +0.000   +0.000 -296.149 -762.920   +0.000   +0.000 TARGET     SCIENCE        0      0  4.744          
+
+

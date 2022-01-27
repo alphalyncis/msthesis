@@ -1,0 +1,5 @@
+steps:
+1. run make_coron.sh
+2. make folders image{lam}_sim with subdirectories, including casedir 5,0,1,2
+3. run mirisim_all.sh
+

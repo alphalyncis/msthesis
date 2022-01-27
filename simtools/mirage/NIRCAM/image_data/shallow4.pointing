@@ -1,0 +1,14 @@
+# APT Output Product
+# 
+# APT Version: Version 2020.5  
+# Date: Sun Jul 25 21:07:31 GMT 2021
+
+JWST Pointing Report for JWST Approved Proposal 5 (img2_proposal.aptx)
+
+========================================
+* CPD imaging (Obs 1)
+** Visit 1:1
+Tar Tile Exp Dith Aperture Name             Target       RA         Dec        BaseX    BaseY    DithX    DithY    V2       V3       IdlX     IdlY   Level      Type      ExPar  DkPar   dDist          
+  1    1   1    1 NRCALL_FULL               1 CPD       +47.52000  -10.09000   +0.000   +0.000   +0.000   +0.000   -0.328 -492.966   +0.000   +0.000 TARGET     SCIENCE        0      0  0.000 (base)
+
+
